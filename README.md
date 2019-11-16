@@ -1,7 +1,7 @@
 >Easemob WebIM Demo
 
-# webim vue demo简介
-webim-vue demo是基于环信sdk开发的一款具有单聊、群聊、聊天室、音视频等功能的应用，为了vue用户能够快速集成环信 im sdk和音视频sdk，我们特使用了vue+vuex，为大家提供参考，我们也提供了[react版demo](https://github.com/easemob/webim)。
+# webim vue 简介
+webim-vue demo是基于环信sdk开发的一款具有单聊、群聊、聊天室、音视频等功能的应用，使用了vue+vuex。
 
 # 运行起来
 + 说明：音视频功能需要使用https。
@@ -60,4 +60,4 @@ npm run build --report
 + 消息存储在 store > chat > msgList
 + 关于持久化：这个demo采用的sdk消息漫游的增值服务，可以拉取历史消息，当然你也可以采用indexdb来做本地存储，同时也可以开通实时回调服务，将消息同步到自己的服务器。
 # 写在最后
-第一期已经完成了绝大部门im基础功能，大家也可以取查看官方详细[文档](http://docs-im.easemob.com/im/web/intro/start) 当然由于接触vue时间有限，这个demo只是给大家一个参考，很多地方的实现并不是很多，大家就自行发挥吧，后续会持续优化和更新。
+已经完成了绝大部门im基础功能，可以取查看官方详细[文档](http://docs-im.easemob.com/im/web/intro/start)，后续会持续优化和更新。
