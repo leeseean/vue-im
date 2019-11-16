@@ -121,14 +121,14 @@
         <i
           class="el-icon-video-camera icon"
           @click="callVideo"
-          v-show="isHttps&&type != 'chatroom'"
+          v-show="isHttps"
           :style="nowIsVideo?'pointer-events: none':'cursor: pointer'"
         ></i>
         <i
           v-if="type === 'contact'"
           class="el-icon-microphone icon"
           @click="callVoice"
-          v-show="isHttps && type != 'chatroom'"
+          v-show="isHttps"
           :style="nowIsVideo?'pointer-events: none':'cursor: pointer'"
         ></i>
       </div>
