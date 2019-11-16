@@ -64,7 +64,6 @@ import Draggable from "../draggable";
 export default{
 	data(){
 		return {
-			// emediaModalVisible: false
 			rv_local: {
 				nickName: "",
 				streamId: "",
@@ -265,7 +264,10 @@ export default{
 			};
 			WebIM.EMService.onStreamRemoved = function(member, stream){
 			};
-		},
+        },
+        showModal(){
+            this.showMultiAVModal();
+        },
 		closeModal(){
 			// clearInterval(this.state.interval)
 			WebIM.EMService.exitConference();

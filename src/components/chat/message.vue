@@ -148,7 +148,7 @@
     <GetGroupInfo ref="groupInfoModel" @closeGroupMessage="closeGroupMessage" />
 
     <EmediaModal ref="emediaModal" @changeIsVideoState="changeIsVideoState" />
-    <MultiAVModal :to="activedKey[type]" />
+    <MultiAVModal ref="multiAVModal" :to="activedKey[type]" />
     <AddAVMemberModal ref="addAvMembertModal" :to="activedKey[type]" />
   </div>
 </template>
@@ -454,6 +454,8 @@ export default {
       } else if (this.type == "group") {
         this.getGroupMembers(this.$data.activedKey[this.type].groupid);
         this.$refs.addAvMembertModal.show();
+      } else if (this.type === "chatroom") {
+        this.$refs.multiAVModal.showModal();
       }
     },
     callVoice() {

@@ -280,6 +280,8 @@ export default {
       } else if (this.type == "group") {
         this.getGroupMembers(this.$data.activedKey[this.type].groupid);
         this.$refs.addAvMembertModal.show();
+      } else if (this.type === "chatroom") {
+        this.$refs.multiAVModal.showModal();
       }
     },
     callVoice() {

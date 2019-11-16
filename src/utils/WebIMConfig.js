@@ -68,7 +68,7 @@ var config = {
      * Whether to use window.doQuery()
      * @parameter {Boolean} true or false
      */
-    isWindowSDK: false,
+    isWindowSDK: true,
     /**
      * isSandBox=true:  xmppURL: 'im-api.sandbox.easemob.com',  apiURL: '//a1.sdb.easemob.com',
      * isSandBox=false: xmppURL: 'im-api.easemob.com',          apiURL: '//a1.easemob.com',
