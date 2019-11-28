@@ -6,13 +6,13 @@ import Contact from '../pages/chat/index.vue';
 Vue.use(Router)
 
 export default new Router({
-    mode: 'history',
+    mode: 'hash',
     routes: [
-        { 
+        {
             path: '',
             redirect: '/login'
         },
-        { 
+        {
             path: '/',
             redirect: '/login'
         },
